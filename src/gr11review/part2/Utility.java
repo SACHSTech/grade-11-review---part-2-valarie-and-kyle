@@ -6,6 +6,7 @@ public class Utility {
 
   }
 
+  // Method 1
   public static String zipZap(String str) {
 
     String strWord = "";
@@ -18,7 +19,7 @@ public class Utility {
         strWord = strWord + str.substring(intCount, intCount +1) + str.substring(intCount + 2, intCount + 3);
         intCount = intCount + 2;
         }else {
-          strWord = strWord + strsubstring(intCount, intCount + 1);
+          strWord = strWord + str.substring(intCount, intCount + 1);
 
         }
 
@@ -26,7 +27,11 @@ public class Utility {
 
     return strWord;
 
+  }
 
+  public static String longestWord(String filenametxt) {
+    
 
   }
+
 }
