@@ -1,5 +1,7 @@
 package gr11review.part2;
 
+import java.io.BufferedReader;
+
 public class Utility {
 
   public static void main(String[] args){
@@ -31,6 +33,24 @@ public class Utility {
 
   public static String longestWord(String filenametxt) {
     
+    BufferedReader thefile = new BufferedReader(new FileReader(strFileName));
+
+    String strLongestWord = "";
+    String strCurrent;
+
+    while (thefile.eof () == false) {
+      strCurrent = thefile.readLine();
+
+      if (strCurrent.length () >= strLongestWord.length()) {
+        strLongestWord = strCurrent;
+
+      }
+      
+      thefile.close();
+      
+    }
+
+    return strLongestWord;
 
   }
 
