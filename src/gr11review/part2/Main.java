@@ -45,7 +45,7 @@ public class Main {
   public static void main(String[] args) throws IOException {
 
     int[] outer = {1, 2, 4, 4, 6}; 
-    int[] inner = {2, 4};
+    int[] inner = {2, 4}; 
     System.out.println(Utility.linearIn(outer, inner));
 
   }
