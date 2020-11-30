@@ -71,4 +71,29 @@ public class Utility {
     return intNums;
   }
 
+  public static boolean linearIn(int[] outer, int[] inner) {
+
+    int intCount1 = 0;
+    int intCount2 = 0;
+
+    while (intCount1 < inner.length && intCount2 < outer.length) {
+      if (inner[intCount1] > outer[intCount2]) {
+        intCount2++;
+      }else if (inner[intCount1] < outer[intCount2]) {
+        return false;
+      }else {
+        intCount1++;
+
+      }
+    }
+
+    if (intCount1 != inner.length) {
+      return false;
+
+    }
+
+    return true;
+
+  }
+
 }
