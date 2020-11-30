@@ -36,7 +36,7 @@ public class Main {
     int[] nums = {2, 10, 3, 4, 20, 5, 30, 5,6,7,8, 100, 6, 7};
     nums = Utility.tenRun(nums);
 
-    System.out.println(Arrays.toString(nums));
+    System.out.println(Arrays.toString(nums)); 
     
 
   }
