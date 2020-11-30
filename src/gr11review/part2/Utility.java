@@ -76,15 +76,19 @@ public class Utility {
     int intCount1 = 0;
     int intCount2 = 0;
 
-    while (intCount1 < inner.length && intCount2 < outer.length) {
-      if (inner[intCount1] > outer[intCount2]) {
-        intCount2++;
-      }else if (inner[intCount1] < outer[intCount2]) {
-        return false;
-      }else {
-        intCount1++;
+    for (intCount1 = 0; intCount1 < inner.length; intCount1++) {
+      while (intCount2 < outer.length) {
+        if (inner[intCount1] > outer[intCount2]) {
+          intCount2++;
+        }else if (inner[intCount1] < outer[intCount2]) {
+          return false;
+
+        }else if (inner[intCount1] == outer[intCount2]) {
+          break;
+        }
 
       }
+
     }
 
     if (intCount1 != inner.length) {
@@ -93,6 +97,11 @@ public class Utility {
     }
 
     return true;
+
+  }
+
+  public static void pascalTri(int i, int j) {
+
 
   }
 
