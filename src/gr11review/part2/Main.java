@@ -30,7 +30,7 @@ public class Main {
 
   }
   */
-
+  /**
   public static void main(String[] args) throws IOException {
     
     int[] nums = {2, 10, 3, 4, 20, 5, 30, 5,6,7,8, 100, 6, 7};
@@ -38,6 +38,15 @@ public class Main {
 
     System.out.println(Arrays.toString(nums)); 
     
+
+  }
+  */
+
+  public static void main(String[] args) throws IOException {
+
+    int[] outer = {1, 2, 4, 6}; 
+    int[] inner = {2, 3, 4};
+    System.out.println(Utility.linearIn(outer, inner));
 
   }
 
