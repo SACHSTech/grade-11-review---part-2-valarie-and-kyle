@@ -57,4 +57,23 @@ public class Utility {
 
   }
 
+  public int[] tenRun(int[] nums) {
+
+    int intCurrent = 0;
+    int intCount;
+
+    for (intCount = 1; intCount < nums.length; intCount++) {
+
+      if (nums[intCount] % 10 == 0) {
+        intCurrent = nums[intCount]
+      }else if (nums[intCount] % 10 != 0) {
+        nums[intCount] = intCurrent;
+      }
+
+      return nums;
+
+
+    }
+  }
+
 }
