@@ -1,6 +1,7 @@
 package gr11review.part2;
-
-import java.io.BufferedReader;
+import java.io.BufferedReader.*;
+import java.io.*;
+import java.util.*;
 
 public class Utility {
 
@@ -31,24 +32,26 @@ public class Utility {
 
   }
 
-  public static String longestWord(String filenametxt) {
+  public static String longestWord(String filenametxt) throws IOException {
     
-    BufferedReader thefile = new BufferedReader(new FileReader(strFileName));
+    BufferedReader thefile = new BufferedReader(new FileReader("src/gr11review/part2/" + filenametxt));
 
     String strLongestWord = "";
-    String strCurrent;
+    String strCurrent = thefile.readLine();
 
-    while (thefile.eof () == false) {
-      strCurrent = thefile.readLine();
+    while (strCurrent !=null) {
 
       if (strCurrent.length () >= strLongestWord.length()) {
         strLongestWord = strCurrent;
 
       }
-      
-      thefile.close();
+
+      strCurrent = thefile.readLine();
       
     }
+
+    thefile.close();
+
 
     return strLongestWord;
 
