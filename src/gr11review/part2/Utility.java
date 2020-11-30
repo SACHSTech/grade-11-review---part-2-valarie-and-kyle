@@ -5,10 +5,6 @@ import java.util.*;
 
 public class Utility {
 
-  public static void main(String[] args){
-
-  }
-
   // Method 1
   public static String zipZap(String str) {
 
@@ -57,23 +53,22 @@ public class Utility {
 
   }
 
-  public int[] tenRun(int[] nums) {
+  public static int[] tenRun(int[] intNums) {
 
     int intCurrent = 0;
     int intCount;
 
-    for (intCount = 1; intCount < nums.length; intCount++) {
+    for (intCount = 1; intCount < intNums.length; intCount++) {
 
-      if (nums[intCount] % 10 == 0) {
-        intCurrent = nums[intCount]
-      }else if (nums[intCount] % 10 != 0) {
-        nums[intCount] = intCurrent;
+      if (intNums[intCount] % 10 == 0) {
+        intCurrent = intNums[intCount];
+      }else if (intNums[intCount] % 10 != 0) {
+        intNums[intCount] = intCurrent;
       }
 
-      return nums;
-
-
     }
+
+    return intNums;
   }
 
 }
