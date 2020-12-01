@@ -50,7 +50,7 @@ public class Main {
     System.out.println(Utility.linearIn(outer, inner));
     */
 
-    Utility.pascalTri(4, 5);
+    Utility.pascalTri(4, 5); 
 
   }
 
