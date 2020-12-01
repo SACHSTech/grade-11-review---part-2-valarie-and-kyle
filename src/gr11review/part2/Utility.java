@@ -46,7 +46,7 @@ public class Utility {
     String strLongestWord = "";
     String strCurrent = thefile.readLine();
 
-    // Runs code until the end of the file
+    // Runs code until the end of the file 
     while (strCurrent != null) {
       
       // Compares the word lengths
