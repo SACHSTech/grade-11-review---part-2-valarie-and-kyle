@@ -100,12 +100,13 @@ public class Utility {
 
   }
 
-  public static void pascalTri(int i, int j) {
-    PrintWriter theout = new PrintWriter(new FileWriter("pascalOut.txt", true));
+  public static void pascalTri(int i, int j) throws IOException {
+    PrintWriter theout = new PrintWriter(new FileWriter("src/gr11review/part2/pascalOut.txt", true));
 
+    int intPascalTriangle[][] = new int[i][j];
     int intRow;
     int intColum;
-    int intPascalTriangle[] = new int[i][j];
+  
 
     // First print out row and colum 1
     for (intRow = 0; intRow < i; intRow++) {
@@ -123,19 +124,17 @@ public class Utility {
 
     for (intRow = 0; intRow < i; intRow++) {
       for (intColum = 0; intColum < j; intColum++) {
-        theout.print(intPascslTriangle[intRow][intColum] + ", ");
-        if (intColum ==j - 1) {
+        theout.print(intPascalTriangle[intRow][intColum] + ", ");
+        if (intColum == j - 1) {
           theout.print(" ");
         }
 
       }
+      theout.println();
     }
 
     theout.close();
 
-
-
-    for (intCount)
 
 
   }
