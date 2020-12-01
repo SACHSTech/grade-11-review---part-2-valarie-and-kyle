@@ -13,14 +13,14 @@ public class Main {
   public static void main(String[] args) throws IOException {
     
     // Method 1
-    /**
+    /** 
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-    String strPattern;
-    String strFinalWord;
-    strPattern = keyboard.readLine();
-    strFinalWord = Utility.zipZap(strPattern);
-    System.out.println(strFinalWord); 
-    */   
+    String strWord;
+    String strFinal;
+    strWord = keyboard.readLine();
+    strFinal = Utility.zipZap(strWord);
+    System.out.println(strFinal); 
+    */     
     
     // FileIO 1
     /**

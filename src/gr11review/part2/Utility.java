@@ -6,13 +6,23 @@ import java.util.*;
 public class Utility {
 
   // Method 1
-  public static String zipZap(String str) {
+  public static String zipZap(String strWord) {
 
-    String strWord = "";
+    String strFinal = "";
     int intCount;
 
-    if (str.length() <= 3) return str;
+    for (intCount = 0; intCount < strWord.length(); intCount++) {
+      if (strWord.charAt(intCount) == 'z' && strWord.charAt(intCount + 2) == 'p') {
+        strFinal = strFinal + "zp";
+        intCount = intCount + 2;
+      }else {
+        strFinal = strFinal + strWord.charAt(intCount);
+      }
+    }
 
+    return strFinal;
+
+/**
     for (intCount = 0; intCount < str.length() - 2; intCount++) {
       if (str.substring(intCount, intCount + 1).equals("z") && str.substring(intCount + 2, intCount + 3).equals("p")) {
         strWord = strWord + str.substring(intCount, intCount +1) + str.substring(intCount + 2, intCount + 3);
@@ -23,8 +33,9 @@ public class Utility {
         }
 
     }
+*/
 
-    return strWord;
+    // return strWord;
 
   }
 
