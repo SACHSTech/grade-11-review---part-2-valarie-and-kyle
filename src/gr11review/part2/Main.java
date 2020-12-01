@@ -22,14 +22,14 @@ public class Main {
     
   */
 
-  /** 
+   
   public static void main(String[] args) throws IOException {
     
     String filenametxt = "WordDoc.txt";
     System.out.println(Utility.longestWord(filenametxt));
 
   }
-  */
+  
   /**
   public static void main(String[] args) throws IOException {
     
@@ -42,7 +42,7 @@ public class Main {
   }
   */
 
-  public static void main(String[] args) throws IOException {
+ // public static void main(String[] args) throws IOException {
 
     /**
     int[] outer = {1, 2, 4, 4, 6}; 
@@ -50,9 +50,9 @@ public class Main {
     System.out.println(Utility.linearIn(outer, inner));
     */
 
-    Utility.pascalTri(4, 5); 
+    //Utility.pascalTri(5, 6); 
 
-  }
+  //}
 
 
  
