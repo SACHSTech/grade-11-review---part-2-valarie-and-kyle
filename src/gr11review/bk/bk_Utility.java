@@ -1,13 +1,9 @@
-package gr11review.part2;
-import java.io.*;
+package gr11review.bk;
 
-/**
-* Grade 11 Review Part 2
-* @Author: V.Shek & K.M
-*
-*/
+//import java.io.*;
 
-public class Utility {  
+
+public class bk_Utility {  
  // Method 2 (complete)
  public static int sumNumbers(String str) {
   int y = 0;
@@ -44,8 +40,9 @@ public static int[] notAlone(int[] nums, int val) {
 }
 
 //File IO 2
-
 public static String alphaWord(String words){
+  BufferedReader thefile = new BufferedReader(new FileReader("WordBank.txt"));
+  words = thefile.readLine();
   String FirstLetter = words.substring(0,1);
   if(FirstLetter.equalsIgnoreCase("A")){
     return words;
@@ -99,7 +96,7 @@ public static String alphaWord(String words){
     return words; 
   }else if(FirstLetter.equalsIgnoreCase("Z")){
   }return words; 
-  //thefile.close();
+  thefile.close();
 }
 
 // Array 4 One Dimension (2 loops) (complete)
@@ -117,29 +114,18 @@ public static String alphaWord(String words){
     }
       if(sum1 != sum2);
     }return false;
-  } 
-
-public static void diagonal(int size) {
-  int[][] dimension={};
-  int n = size - 1;
-  //dimension = new IntArray [n][n];
-
-  for(int i=0; i< n ; i++){
-    for(int j=0 ; j<=n ; j++) {
-      if (j==(n-1)) {
-        dimension[i][j] = 1;
-        }
-      else if (j < (n-1)) {
-        dimension [i][j] = 0;  
-      }
-      else {
-        dimension [i][j] = 2;
-      }
-    }
+    } 
   }
-  //PrintWriter theout = new PrintWriter(new FileWriter("src/gr11review/part2/diagonalOut.txt", true));
-  //theout.println(dimension);
-  //theout.close();
-}  
+
+public static void diagonal(int n){
+  int[] dimension;
+  dimension = new Int [n][n];
+
+  }
 }
+
+  
+  
+
+//}
 
