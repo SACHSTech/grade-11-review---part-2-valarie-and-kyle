@@ -23,10 +23,10 @@ public class Main {
     */     
     
     // FileIO 1
-    /**
+    
     String filenametxt = "WordDoc.txt";
     System.out.println(Utility.longestWord(filenametxt));
-    */
+    
 
     // Array 1
     /**

@@ -43,7 +43,7 @@ public class Utility {
   public static String longestWord(String filenametxt) throws IOException {
     
     // Opens the file
-    BufferedReader thefile = new BufferedReader(new FileReader("src/gr11review/part2/" + filenametxt));
+    BufferedReader thefile = new BufferedReader(new FileReader(filenametxt));
 
     // Create the variables
     String strLongestWord = "";
