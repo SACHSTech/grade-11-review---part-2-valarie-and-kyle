@@ -5,12 +5,20 @@ import java.util.*;
 
 public class Utility {
 
-  // Method 1
+  /**
+  * removes the middle letter or any three letter word with z as the first letter and p as the third letter
+  *
+  * @param strWord is the users given word
+  * @return the word without the middle letter in any three letter word with z as the first letter and p as the third letter
+  * @author K.Mendes
+  */
   public static String zipZap(String strWord) {
 
+    // Create the variables
     String strFinal = "";
     int intCount;
 
+    // Checking to see if there is any z as intCount and p as (intCount + 2) 
     for (intCount = 0; intCount < strWord.length(); intCount++) {
       if (strWord.charAt(intCount) == 'z' && strWord.charAt(intCount + 2) == 'p') {
         strFinal = strFinal + "zp";
@@ -20,19 +28,18 @@ public class Utility {
       }
     }
 
+    // Returns the final string
     return strFinal;
 
   }
 
-/**
-* Outputs the longest word in the text file
-*
-* @param filenametxt the name of the file
-* @return the longest word from the file
-* @author K.Mendes
-*/
-
-
+  /**
+  * Outputs the longest word in the text file
+  *
+  * @param filenametxt the name of the file
+  * @return the longest word from the file
+  * @author K.Mendes
+  */
   public static String longestWord(String filenametxt) throws IOException {
     
     // Opens the file
