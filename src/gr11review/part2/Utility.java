@@ -6,7 +6,7 @@ import java.util.*;
 public class Utility {
 
   /**
-  * removes the middle letter or any three letter word with z as the first letter and p as the third letter
+  * removes the middle letter of any three letter word with z as the first letter and p as the third letter
   *
   * @param strWord is the users given word
   * @return the word without the middle letter in any three letter word with z as the first letter and p as the third letter
@@ -74,7 +74,6 @@ public class Utility {
   * @return the array with only the multiples of 10
   * @author K.Mendes
   */
-
   public static int[] tenRun(int[] intNums) {
 
     // Create the variables
@@ -90,11 +89,11 @@ public class Utility {
       }else if (intNums[intCount] % 10 != 0) {
         intNums[intCount] = intCurrent;
       }
-
     }
 
     // Returns the new array
     return intNums;
+
   }
 
   /**
@@ -123,9 +122,7 @@ public class Utility {
         }else if (intInner[intCount1] == intOuter[intCount2]) {
           break;
         }
-
       }
-
     }
 
     // Checks to see if the end of the inner array is reached

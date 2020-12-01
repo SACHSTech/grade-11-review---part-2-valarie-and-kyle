@@ -30,7 +30,7 @@ public class Main {
 
     // Array 1
     /**
-    int[] nums = {2, 10, 3, 4, 20, 5};
+    int[] nums = {2, 10, 3, 20, 5};
     nums = Utility.tenRun(nums);
 
     System.out.println(Arrays.toString(nums)); 
@@ -41,10 +41,10 @@ public class Main {
     int[] outer = {1, 2, 4, 4, 6}; 
     int[] inner = {2, 4}; 
     System.out.println(Utility.linearIn(outer, inner));
-    */    
+    */ 
   
     // Array 5
-    // Utility.pascalTri(5, 6);
+    // Utility.pascalTri(3, 4);
 
   }
  
