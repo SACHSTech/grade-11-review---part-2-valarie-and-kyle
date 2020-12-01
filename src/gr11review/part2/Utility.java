@@ -101,6 +101,41 @@ public class Utility {
   }
 
   public static void pascalTri(int i, int j) {
+    PrintWriter theout = new PrintWriter(new FileWriter("pascalOut.txt", true));
+
+    int intRow;
+    int intColum;
+    int intPascalTriangle[] = new int[i][j];
+
+    // First print out row and colum 1
+    for (intRow = 0; intRow < i; intRow++) {
+      intPascalTriangle[intRow][0] = 1;
+    }
+    for (intColum = 0; intColum < j; intColum++) {
+      intPascalTriangle[0][intColum] = 1;
+    }
+
+    for (intRow = 1; intRow < i; intRow++) {
+      for (intColum = 1; intColum < j; intColum++) {
+        intPascalTriangle[intRow][intColum] = intPascalTriangle[intRow - 1][intColum] + intPascalTriangle[intRow][intColum - 1];
+      }
+    }
+
+    for (intRow = 0; intRow < i; intRow++) {
+      for (intColum = 0; intColum < j; intColum++) {
+        theout.print(intPascslTriangle[intRow][intColum] + ", ");
+        if (intColum ==j - 1) {
+          theout.print(" ");
+        }
+
+      }
+    }
+
+    theout.close();
+
+
+
+    for (intCount)
 
 
   }
