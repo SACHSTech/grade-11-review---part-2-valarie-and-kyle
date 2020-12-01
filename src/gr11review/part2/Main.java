@@ -10,50 +10,42 @@ import gr11review.part2.Utility.*;
 
 public class Main {
 
-/**
   public static void main(String[] args) throws IOException {
     
-   BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+    // Method 1
+    /**
+    BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
     String strPattern;
     String strFinalWord;
     strPattern = keyboard.readLine();
     strFinalWord = Utility.zipZap(strPattern);
-    System.out.println(strFinalWord);
+    System.out.println(strFinalWord); 
+    */   
     
-  */
-
-   
-  public static void main(String[] args) throws IOException {
-    
+    // FileIO 1
+    /**
     String filenametxt = "WordDoc.txt";
     System.out.println(Utility.longestWord(filenametxt));
+    */
 
-  }
-  
-  /**
-  public static void main(String[] args) throws IOException {
-    
-    int[] nums = {2, 10, 3, 4, 20, 5, 30, 5,6,7,8, 100, 6, 7};
+    // Array 1
+    /**
+    int[] nums = {2, 10, 3, 4, 20, 5};
     nums = Utility.tenRun(nums);
 
     System.out.println(Arrays.toString(nums)); 
-    
+    */
 
-  }
-  */
-
- // public static void main(String[] args) throws IOException {
-
+    // Array 3
     /**
     int[] outer = {1, 2, 4, 4, 6}; 
     int[] inner = {2, 4}; 
     System.out.println(Utility.linearIn(outer, inner));
-    */
+    */    
+  
+    // Array 5
+    // Utility.pascalTri(5, 6);
 
-    //Utility.pascalTri(5, 6); 
-
-  //}
-
-
+  }
  
 }
