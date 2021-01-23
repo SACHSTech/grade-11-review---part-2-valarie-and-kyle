@@ -1,0 +1,2 @@
+Utility.diagonal(sizee)
+4
